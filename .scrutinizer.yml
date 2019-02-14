@@ -1,0 +1,12 @@
+checks:
+  go: true
+
+build:
+  environment:
+    go: go1.11.5
+
+  nodes:
+    analysis:
+      tests:
+        override:
+          - go-scrutinizer-run
